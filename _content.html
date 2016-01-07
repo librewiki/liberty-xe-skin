@@ -1,10 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
-</body>
-</html>
+<div class="content-wrapper">
+    <!--#include("./_sidebar.html")-->
+    <div class="container-fluid liberty-content">
+        <div class="liberty-content-header">
+            <div class="header-ads">
+                <ins class="adsbygoogle"
+                    style="display:block; min-width:20rem; width:100%;"
+                    data-ad-client="ca-pub-2664061841343191"
+                    data-ad-slot="6502738263"
+                    data-ad-format="auto">
+                </ins>
+            </div>
+            <div class="title">
+                <h1>
+                    {$module_info->browser_title}
+                </h1>
+            </div>
+        </div>
+        <div class="liberty-content-main">
+            {$content}
+        </div>
+        <!--#include("./_footer.html")-->
+    </div>
+</div>

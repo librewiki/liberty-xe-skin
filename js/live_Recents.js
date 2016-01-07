@@ -154,6 +154,7 @@ function ShowAjaxRecentList(parent)
 		var getParameter =
 		{
 			action:"query",
+            origin:window.location.protocol + "//bbs.librewiki.net",
 			list:"recentchanges",
 			rcprop:"title|timestamp",
 			rcshow:"!bot|!redirect",
@@ -163,9 +164,9 @@ function ShowAjaxRecentList(parent)
       rcnamespace:_rcnamespace,
       rctoponly:""
 		};
-		$.ajax(
+		jQuery.ajax(
 		{
-			url: mw.util.wikiScript("api"), // 호출 URL
+			url: "//librewiki.net/api.php", // 호출 URL
 
 			data:getParameter,
 			'xhrFields': {
@@ -213,7 +214,7 @@ function ShowAjaxRecentList(parent)
 			}
 			if(parent != null)
 			{
-				$(parent).html(html);
+				jQuery(parent).html(html);
 			}
 		});
 	}
@@ -225,14 +226,14 @@ function ShowAjaxRecentList(parent)
  */
 var recentIntervalHandle = null;
 
-jQuery( function ( $ ) {
+jQuery( function ( jQuery ) {
 
 
-	var width = $(window).width();
+	var width = jQuery(window).width();
 	if(width > 1023)
 	{
 		isAllowRequestList = true;
-		ShowAjaxRecentList($("#live-recent-list"));
+		ShowAjaxRecentList(jQuery("#live-recent-list"));
 	}
 	else
 	{
@@ -240,28 +241,28 @@ jQuery( function ( $ ) {
 	}
 
 	//만약에 화면의 사이즈가 작아 최근 변경글이 안보일 시, 갱신을 하지 않는다.
-	$(window).resize(recentIntervalCheck);
+	jQuery(window).resize(recentIntervalCheck);
 } );
 
 
-jQuery( function ( $ ) {
-    $("#liberty-recent-tab1").click(function(e){
-        $(this).addClass('active');
-        $("#liberty-recent-tab2").removeClass('active');
+jQuery( function ( jQuery ) {
+    jQuery("#liberty-recent-tab1").click(function(e){
+        jQuery(this).addClass('active');
+        jQuery("#liberty-recent-tab2").removeClass('active');
         _rcnamespace = "0|4|10|12|14|1600";
-        ShowAjaxRecentList($("#live-recent-list"));
+        ShowAjaxRecentList(jQuery("#live-recent-list"));
     });
 
-    $("#liberty-recent-tab2").click(function(e){
-        $(this).addClass('active');
-        $("#liberty-recent-tab1").removeClass('active');
+    jQuery("#liberty-recent-tab2").click(function(e){
+        jQuery(this).addClass('active');
+        jQuery("#liberty-recent-tab1").removeClass('active');
         _rcnamespace = "1|3|5|7|9|11|13|15|2600|1601";
-        ShowAjaxRecentList($("#live-recent-list"));
+        ShowAjaxRecentList(jQuery("#live-recent-list"));
     });
 } );
 
 var recentIntervalCheck = function(){
-	var width = $(window).width();
+	var width = jQuery(window).width();
 	if(width <= 1023){
 		if(recentIntervalHandle != null){
 			clearInterval(recentIntervalHandle);
@@ -271,13 +272,13 @@ var recentIntervalCheck = function(){
 	}else{
 		if(recentIntervalHandle == null){
 			recentIntervalHandle = setInterval(function(){
-				ShowAjaxRecentList($("#live-recent-list"));
+				ShowAjaxRecentList(jQuery("#live-recent-list"));
 			},10 * 1000);
 		}
 		isAllowRequestList = true;
 	}
 }
 
-jQuery(document).ready(function($){
+jQuery(document).ready(function(jQuery){
 	recentIntervalCheck();
 });

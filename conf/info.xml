@@ -2,7 +2,7 @@
 <layout version="0.2">
     <title xml:lang="ko">리버티 레이아웃</title>
     <description xml:lang="ko">리브레 위키 레이아웃 입니다.</description>
-    <version>0.1</version>
+    <version>1.0a</version>
     <date>2016-01-07</date>
     <author email_address="admin@itsurea.net" link="https://al.gl">
         <name xml:lang="ko">이츠레아</name>

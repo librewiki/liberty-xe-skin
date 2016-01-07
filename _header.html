@@ -3,7 +3,7 @@
         <a class="navbar-brand" href="/"></a>
         <ul class="nav navbar-nav">
             <li loop="$header_menu->list=>$key,$val1" class="nav-item<!--@if($val1['list'])--> dropdown<!--@end-->">
-                <a class="nav-link" href="{$val1['href']}" target="_blank"|cond="$val1['open_window']=='Y'" data-toggle="dropdown"|cond="$val1['list']" aria-expanded="false"|cond="$val1['list']">
+                <a class="nav-link<!--@if($val1['list'])--> dropdown-toggle dropdown-toggle-fix<!--@end-->" href="{$val1['href']}" data-toggle="dropdown"|cond="$val1['list']" aria-expanded="false"|cond="$val1['list']">
                     <span class="fa fa-{$val1['desc']}"></span>
                     <span class="hide-title">{$val1['link']}</span>
                 </a>
@@ -34,10 +34,10 @@
                     <div class="dropdown-divider"></div>
                     <a href="/wiki/%ED%8A%B9%EC%88%98:%ED%99%98%EA%B2%BD%EC%84%A4%EC%A0%95" class="dropdown-item">환경설정</a>
                     <div class="dropdown-divider view-logout"></div>
-                    <a href="/wiki/%ED%8A%B9%EC%88%98:%EB%A1%9C%EA%B7%B8%EC%95%84%EC%9B%83" class="dropdown-item view-logout">로그아웃</a>
+                    <a href="{getUrl('','act','dispMemberLogout')}" class="dropdown-item view-logout">로그아웃</a>
                 </div>
             </div>
-            <a href="/wiki/%ED%8A%B9%EC%88%98:%EB%A1%9C%EA%B7%B8%EC%95%84%EC%9B%83" title="로그아웃" class="hide-logout logout-btn"><span class="fa fa-sign-out"></span></a>
+            <a href="{getUrl('','act','dispMemberLogout')}" class="hide-logout logout-btn"><span class="fa fa-sign-out"></span></a>
             <!--@else-->
             <a href="{@ getUrl('','module','loginxeclient','act','dispLoginxeclientOAuth','provider','mw'); }" class="none-outline">
                 <span class="fa fa-sign-in"></span>
