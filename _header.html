@@ -1,6 +1,6 @@
 <div class="nav-wrapper navbar-fixed-top">
     <nav class="navbar navbar-dark">
-        <a class="navbar-brand" href="/"></a>
+        <a class="navbar-brand" href="//librewiki.net"></a>
         <ul class="nav navbar-nav">
             <li loop="$header_menu->list=>$key,$val1" class="nav-item<!--@if($val1['list'])--> dropdown<!--@end-->">
                 <a class="nav-link<!--@if($val1['list'])--> dropdown-toggle dropdown-toggle-fix<!--@end-->" href="{$val1['href']}" data-toggle="dropdown"|cond="$val1['list']" aria-expanded="false"|cond="$val1['list']">
@@ -25,14 +25,14 @@
                     <img class="profile-img" src="//secure.gravatar.com/avatar/{$email}">
                 </a>
                 <div class="dropdown-menu dropdown-menu-right login-dropdown-menu" aria-labelledby="login-menu">
-                    <a href="/wiki/%EC%82%AC%EC%9A%A9%EC%9E%90:{$logged_info->user_name}" class="dropdown-item">{$logged_info->user_name}</a>
+                    <a href="//librewiki.net/wiki/%EC%82%AC%EC%9A%A9%EC%9E%90:{$logged_info->user_name}" class="dropdown-item">{$logged_info->user_name}</a>
                     <div class="dropdown-divider"></div>
-                    <a href="/wiki/%ED%8A%B9%EC%88%98:%EC%95%8C%EB%A6%BC" class="dropdown-item">알림</a>
-                    <a href="/wiki/%ED%8A%B9%EC%88%98:%EA%B8%B0%EC%97%AC/{$logged_info->user_name}" class="dropdown-item">내 기여 목록</a>
-                    <a href="/wiki/%EC%82%AC%EC%9A%A9%EC%9E%90%ED%86%A0%EB%A1%A0:{$logged_info->user_name}" class="dropdown-item">내 토론 문서</a>
-                    <a href="/wiki/%ED%8A%B9%EC%88%98:%EC%A3%BC%EC%8B%9C%EB%AC%B8%EC%84%9C%EB%AA%A9%EB%A1%9D" class="dropdown-item">내 주시 문서</a>
+                    <a href="//librewiki.net/wiki/%ED%8A%B9%EC%88%98:%EC%95%8C%EB%A6%BC" class="dropdown-item">알림</a>
+                    <a href="//librewiki.net/wiki/%ED%8A%B9%EC%88%98:%EA%B8%B0%EC%97%AC/{$logged_info->user_name}" class="dropdown-item">내 기여 목록</a>
+                    <a href="//librewiki.net/wiki/%EC%82%AC%EC%9A%A9%EC%9E%90%ED%86%A0%EB%A1%A0:{$logged_info->user_name}" class="dropdown-item">내 토론 문서</a>
+                    <a href="//librewiki.net/wiki/%ED%8A%B9%EC%88%98:%EC%A3%BC%EC%8B%9C%EB%AC%B8%EC%84%9C%EB%AA%A9%EB%A1%9D" class="dropdown-item">내 주시 문서</a>
                     <div class="dropdown-divider"></div>
-                    <a href="/wiki/%ED%8A%B9%EC%88%98:%ED%99%98%EA%B2%BD%EC%84%A4%EC%A0%95" class="dropdown-item">환경설정</a>
+                    <a href="//librewiki.net/wiki/%ED%8A%B9%EC%88%98:%ED%99%98%EA%B2%BD%EC%84%A4%EC%A0%95" class="dropdown-item">환경설정</a>
                     <div class="dropdown-divider view-logout"></div>
                     <a href="{getUrl('','act','dispMemberLogout')}" class="dropdown-item view-logout">로그아웃</a>
                 </div>
@@ -47,7 +47,7 @@
         <div id="pt-notifications" class="navbar-notification">
             <a href="#"><span class="label label-danger"></span></a>
         </div>
-        <form action="/index.php" id="searchform" class="form-inline">
+        <form action="//librewiki.net/index.php" id="searchform" class="form-inline">
             <input type="hidden" name="title" value="특수:검색">
             <div class="input-group">
                 <input type="search" name="search" placeholder="검색" title="리브레 위키 검색 [alt-shift-f]" accesskey="f" class="form-control" id="searchInput" autocomplete="off"> <span class="input-group-btn">

@@ -182,7 +182,7 @@ function ShowAjaxRecentList(parent)
 			for(var i = 0 ; i < res.query.recentchanges.length ; i++)
 			{
 				var item = res.query.recentchanges[i];
-        html += '<li><a class="recent-item" href = "/wiki/' + encodeURIComponent(item.title) + '" title="' + item.title +'">';
+        html += '<li><a class="recent-item" href = "//librewiki.net/wiki/' + encodeURIComponent(item.title) + '" title="' + item.title +'">';
 				var timestamp = item.timestamp;
 				var timeStartIdx = timestamp.indexOf("T") + 1;
 				var time = timestamp.substr(timeStartIdx,timestamp.length- timeStartIdx - 1);
