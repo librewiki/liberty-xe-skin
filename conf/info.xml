@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout version="0.2">
+    <title xml:lang="ko">리버티 레이아웃</title>
+    <description xml:lang="ko">리브레 위키 레이아웃 입니다.</description>
+    <version>0.1</version>
+    <date>2016-01-07</date>
+    <author email_address="admin@itsurea.net" link="https://al.gl">
+        <name xml:lang="ko">이츠레아</name>
+    </author>
+    <menus>
+        <menu name="header_menu" maxdepth="3" default="true">
+            <title xml:lang="ko">상단 메뉴</title>
+        </menu>
+        <menu name="footer_menu" maxdepth="3" default="true">
+            <title xml:lang="ko">하단 메뉴</title>
+        </menu>
+    </menus>
+</layout>

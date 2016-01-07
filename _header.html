@@ -1,0 +1,46 @@
+<div class="nav-wrapper navbar-fixed-top">
+    <nav class="navbar navbar-dark">
+        <a class="navbar-brand" href="/"></a>
+        <ul class="nav navbar-nav">
+            <li loop="$header_menu->list=>$key,$val1" class="nav-item" |cond="$val1['list']">
+
+            </li>
+            <li class="nav-item">
+                <a href="/wiki/%ED%8A%B9%EC%88%98:%EC%B5%9C%EA%B7%BC%EB%B0%94%EB%80%9C" title="최근 변경 문서를 불러옵니다. [alt-shift-r]" class="nav-link" accesskey="r"><span class="fa fa-refresh"></span><span class="hide-title">최근바뀜</span></a> </li>
+            <li class="nav-item">
+                <a href="/wiki/%ED%8A%B9%EC%88%98:%EC%9E%84%EC%9D%98%EB%AC%B8%EC%84%9C" title="임의 문서를 불러옵니다. [alt-shift-x]" class="nav-link" accesskey="x"><span class="fa fa-random"></span><span class="hide-title">임의문서</span></a> </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://bbs.librewiki.net/wiki"><span class="fa fa-comments"></span><span class="hide-title">위키방</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://bbs.librewiki.net/anon"><span class="fa fa-users"></span><span class="hide-title">익명방</span></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="/wiki/%ED%8A%B9%EC%88%98:%ED%8A%B9%EC%88%98%EB%AC%B8%EC%84%9C" title="도구를 보여줍니다." class="nav-link dropdown-toggle dropdown-toggle-fix" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa fa-gear"></span><span class="hide-title">도구</span></a> <div class="dropdown-menu" role="menu">
+                <a href="/wiki/%ED%8A%B9%EC%88%98:%ED%8A%B9%EC%88%98%EB%AC%B8%EC%84%9C" title="특수 문서 목록을 불러옵니다. [alt-shift-q]" class="dropdown-item" accesskey="q">특수 문서 목록</a> <a href="/wiki/%ED%8A%B9%EC%88%98:%EC%98%AC%EB%A6%AC%EA%B8%B0" title="파일을 올립니다. [alt-shift-g]" class="dropdown-item" accesskey="g">업로드</a> <a class="dropdown-item" href="https://maps.librewiki.net">리브레맵스</a>
+            </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="/wiki/%EB%8F%84%EC%9B%80%EB%A7%90:%EC%9C%84%ED%82%A4_%EB%AC%B8%EB%B2%95" title="도구를 보여줍니다." class="nav-link dropdown-toggle dropdown-toggle-fix" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa fa-book"></span><span class="hide-title">도움말</span></a> <div class="dropdown-menu" role="menu">
+                <a href="/wiki/%EB%8F%84%EC%9B%80%EB%A7%90:%EC%9C%84%ED%82%A4_%EB%AC%B8%EB%B2%95" title="도움말:위키 문법" class="dropdown-item">위키 문법</a> <a href="/wiki/%EB%8F%84%EC%9B%80%EB%A7%90:Tex_%EB%AC%B8%EB%B2%95" title="도움말:Tex 문법" class="dropdown-item">Tex 문법</a> <a href="/wiki/%EB%8F%84%EC%9B%80%EB%A7%90:%ED%83%9C%EA%B7%B8" title="도움말:태그" class="dropdown-item">태그</a> </div>
+            </li>
+        </ul>
+        <div class="navbar-login">
+            <a href="#" class="none-outline" data-toggle="modal" data-target="#login-modal">
+                <span class="fa fa-sign-in"></span>
+            </a>
+        </div>
+        <div id="pt-notifications" class="navbar-notification">
+            <a href="#"><span class="label label-danger"></span></a>
+        </div>
+        <form action="/index.php" id="searchform" class="form-inline">
+            <input type="hidden" name="title" value="특수:검색">
+            <div class="input-group">
+                <input type="search" name="search" placeholder="검색" title="리브레 위키 검색 [alt-shift-f]" accesskey="f" class="form-control" id="searchInput" autocomplete="off"> <span class="input-group-btn">
+<button type="submit" name="go" value="보기" id="searchGoButton" class="btn btn-secondary"><span class="fa fa-eye"></span></button>
+<button type="submit" name="fulltext" value="검색" id="mw-searchButton" class="btn btn-secondary"><span class="fa fa-search"></span></button>
+</span>
+            </div>
+        </form>
+    </nav>
+</div>
