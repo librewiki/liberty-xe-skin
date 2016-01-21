@@ -4,7 +4,6 @@
 /* 태그 수정 */
 * {
     outline: none;
-
 }
 
 input:hover, button:hover, select:hover {
@@ -13,7 +12,6 @@ input:hover, button:hover, select:hover {
 
 html {
     font-size: 15px;
-    font-smoothing: antialiased;
 }
 
 body {
@@ -444,7 +442,7 @@ del, s, strike {
 
 .Liberty .content-wrapper .liberty-sidebar .right-ads {
     position: absolute;
-    top: 24.6rem;
+    top: 25.73rem;
     width: 15rem;
 }
     /* 오른쪽 메뉴 수정 End */

@@ -4,6 +4,11 @@
 
 /* Max-width: 1023 데스크탑 마지노선 */
 @media (max-width: 1023px) {
+    body, h1, h2, h3, h4, h5, h6 {
+        font-family: "Noto Sans Korean", "Noto Sans", "Malgun Gothic", "맑은 고딕", sans-serif;
+        margin: 0;
+    }
+
     .Liberty .nav-wrapper .navbar {
         padding: 0 0.5rem;
     }
@@ -144,7 +149,7 @@
 @media (max-width: 397px) {
     .Liberty .nav-wrapper .navbar .navbar-brand {
         width: 5rem;
-        background: transparent url(//librewiki.net/skins/Liberty/css/../img/logo.png?2015-12-18T21:00:00Z) no-repeat scroll left center/auto 1.5rem
+        background: transparent url("../img/logo.png") no-repeat scroll left center/auto 1.5rem
     }
 
     .Liberty .nav-wrapper .navbar .navbar-nav .nav-item .nav-link::after {

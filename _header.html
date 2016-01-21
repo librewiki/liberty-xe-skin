@@ -3,10 +3,7 @@
         <a class="navbar-brand" href="//librewiki.net"></a>
         <ul class="nav navbar-nav">
             <li loop="$header_menu->list=>$key,$val1" class="nav-item<!--@if($val1['list'])--> dropdown<!--@end-->">
-                <a class="nav-link<!--@if($val1['list'])--> dropdown-toggle dropdown-toggle-fix<!--@end-->" href="{$val1['href']}" data-toggle="dropdown"|cond="$val1['list']" aria-expanded="false"|cond="$val1['list']">
-                    <span class="fa fa-{$val1['desc']}"></span>
-                    <span class="hide-title">{$val1['link']}</span>
-                </a>
+                <a class="nav-link<!--@if($val1['list'])--> dropdown-toggle dropdown-toggle-fix<!--@end-->" href="{$val1['href']}" data-toggle="dropdown"|cond="$val1['list']" aria-expanded="false"|cond="$val1['list']"><span class="fa fa-{$val1['desc']}"></span><span class="hide-title">{$val1['link']}</span></a>
                 <div class="dropdown-menu" role="menu" cond="$val1['list']">
                     <a loop="$val1['list']=>$key2,$val2" href="{$val2['href']}" class="dropdown-item">{$val2['link']}</a>
                 </div>
@@ -39,7 +36,7 @@
             </div>
             <a href="{getUrl('','act','dispMemberLogout')}" class="hide-logout logout-btn"><span class="fa fa-sign-out"></span></a>
             <!--@else-->
-            <a href="{@ getUrl('','module','loginxeclient','act','dispLoginxeclientOAuth','provider','mw'); }" class="none-outline">
+            <a href="{getUrl('','module','loginxeclient','act','dispLoginxeclientOAuth','provider','mw')}" class="none-outline">
                 <span class="fa fa-sign-in"></span>
             </a>
             <!--@end-->
