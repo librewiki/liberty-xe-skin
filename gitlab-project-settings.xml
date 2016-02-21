@@ -1,0 +1,58 @@
+<application>
+  <component name="SettingsState">
+    <option name="host" value="https://gitlab.com" />
+    <option name="token" value="cFrxp5kE1zMuWwZExt_s" />
+    <option name="projects">
+      <list>
+        <ProjectDto>
+          <option name="httpUrl" value="https://gitlab.com/itsurea/LibreWiki-MW.git" />
+          <option name="name" value="LibreWiki-MW" />
+          <option name="namespace" value="itsurea" />
+          <option name="sshUrl" value="git@gitlab.com:itsurea/LibreWiki-MW.git" />
+        </ProjectDto>
+        <ProjectDto>
+          <option name="httpUrl" value="https://gitlab.com/itsurea/Travianx.git" />
+          <option name="name" value="Travianx" />
+          <option name="namespace" value="itsurea" />
+          <option name="sshUrl" value="git@gitlab.com:itsurea/Travianx.git" />
+        </ProjectDto>
+        <ProjectDto>
+          <option name="httpUrl" value="https://gitlab.com/itsurea/xe_bnetd.git" />
+          <option name="name" value="xe_bnetd" />
+          <option name="namespace" value="itsurea" />
+          <option name="sshUrl" value="git@gitlab.com:itsurea/xe_bnetd.git" />
+        </ProjectDto>
+        <ProjectDto>
+          <option name="httpUrl" value="https://gitlab.com/LibreDev/Liberty.git" />
+          <option name="name" value="Liberty" />
+          <option name="namespace" value="LibreDev" />
+          <option name="sshUrl" value="git@gitlab.com:LibreDev/Liberty.git" />
+        </ProjectDto>
+        <ProjectDto>
+          <option name="httpUrl" value="https://gitlab.com/LibreDev/Liberty-MW-Skin.git" />
+          <option name="name" value="Liberty-MW-Skin" />
+          <option name="namespace" value="LibreDev" />
+          <option name="sshUrl" value="git@gitlab.com:LibreDev/Liberty-MW-Skin.git" />
+        </ProjectDto>
+        <ProjectDto>
+          <option name="httpUrl" value="https://gitlab.com/LibreDev/Liberty-XE-Skin.git" />
+          <option name="name" value="Liberty-XE-Skin" />
+          <option name="namespace" value="LibreDev" />
+          <option name="sshUrl" value="git@gitlab.com:LibreDev/Liberty-XE-Skin.git" />
+        </ProjectDto>
+        <ProjectDto>
+          <option name="httpUrl" value="https://gitlab.com/LibreDev/LibertyParser.git" />
+          <option name="name" value="LibertyParser" />
+          <option name="namespace" value="LibreDev" />
+          <option name="sshUrl" value="git@gitlab.com:LibreDev/LibertyParser.git" />
+        </ProjectDto>
+        <ProjectDto>
+          <option name="httpUrl" value="https://gitlab.com/LibreDev/xe_libre.git" />
+          <option name="name" value="xe_libre" />
+          <option name="namespace" value="LibreDev" />
+          <option name="sshUrl" value="git@gitlab.com:LibreDev/xe_libre.git" />
+        </ProjectDto>
+      </list>
+    </option>
+  </component>
+</application>
