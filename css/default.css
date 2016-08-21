@@ -5,6 +5,7 @@
 /* 태그 수정 */
 * {
     outline: none;
+
 }
 
 input:hover, button:hover, select:hover {
@@ -13,6 +14,7 @@ input:hover, button:hover, select:hover {
 
 html {
     font-size: 15px;
+    font-smoothing: antialiased;
 }
 
 body {
@@ -26,6 +28,11 @@ body, h1, h2, h3, h4, h5, h6 {
 
 h1, h2, h3, h4, h5, h6, b {
     font-family: "Nanum Gothic", "KoPubDotum B", "Noto Sans Korean", "Noto Sans", "Malgun Gothic", "맑은 고딕", sans-serif;
+
+}
+
+input[type=password] {
+    font-family: sans-serif;
 }
 
 h1 {
@@ -123,6 +130,40 @@ textarea {
 
 hr {
     border-top: 1px solid #e1e8ed;
+}
+
+select, input:not([type=button]):not([type=checkbox]):not([type=submit]) {
+    display: inline-block;
+    padding: 0.2rem 0.4rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #55595c;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: .25rem;
+}
+
+select:focus, input:not([type=button]):not([type=checkbox]):not([type=submit]):focus {
+    border-color: #66afe9;
+    outline: 0;
+}
+
+html input[type=button], html input[type=submit], button, #mw-editform-cancel {
+    box-shadow: none;
+    display: inline-block;
+    padding: 0.2rem 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    /* btn-success */
+    color: #fff;
+    background-color: #5cb85c;
 }
 
 html input[type=button]:hover, html input[type=submit]:hover, button:hover, #mw-editform-cancel:hover {
@@ -293,10 +334,6 @@ del, s, strike {
     top: 120%;
     right: -1rem;
     z-index: 1002;
-}
-
-.Liberty .nav-wrapper .navbar .navbar-login .view-logout {
-    display: none;
 }
 
 .Liberty .nav-wrapper .navbar .navbar-login .login-dropdown-menu:before, .Liberty .nav-wrapper .navbar .navbar-login .login-dropdown-menu:after {
