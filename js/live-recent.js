@@ -1,7 +1,9 @@
 $(function() {
+  'use strict';
   var documentNamespaces = '0|4|10|12|14|1600';
   var topicNamespaces = '1|3|5|7|9|11|13|15|2600|1601|1063';
   var isDocumentTab = true;
+  var limit = 10;
 
   $('#liberty-recent-tab1').click(function(e){
     $(this).addClass('active');
@@ -28,7 +30,7 @@ $(function() {
       rcprop: 'title|timestamp',
       rcshow: '!bot|!redirect',
       rctype: 'edit|new',
-      rclimit: 10,
+      rclimit: limit,
       format: 'json',
       rcnamespace: isDocumentTab? documentNamespaces : topicNamespaces,
       rctoponly: true
