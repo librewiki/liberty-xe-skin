@@ -1,5 +1,4 @@
 $(function() {
-  'use strict';
   var documentNamespaces = '0|4|10|12|14|1600';
   var topicNamespaces = '1|3|5|7|9|11|13|15|2600|1601|1063';
   var isDocumentTab = true;
